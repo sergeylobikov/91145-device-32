@@ -1,0 +1,40 @@
+
+
+p {
+font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #444444;
+}
+
+li {
+color: #000000;
+
+}
+
+h1,h2 {
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 50px;
+color: #000000;
+}
+
+ 
+ 
+
+.delivery-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;    
+}
+
+ 
