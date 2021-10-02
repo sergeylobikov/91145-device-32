@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8">
   <title>Главная страница</title>
-  <link rel="stylesheet" href="D:\divice\91145-device-32\css\style.css"/>
+  <link rel="stylesheet" href="/91145-device-32\css\style.css"/>
   </head>
 
 
@@ -26,16 +26,16 @@
 <!-- Навигация юзера --> 
             <ul class="user-navigation">
               <li class="profile">
-                <a href="login.html">Войти</a>
+                <a class="navigation-link" href="login.html">Войти</a>
               </li>
             </ul>
   
             <ul class="user-functions">
               <li class="compare">
-                <a href="compare.html">Сравнить</a>
+                <a class="navigation-link" href="compare.html">Сравнить</a>
               </li>
               <li class="cart">
-                <a href="cart.html">Корзина</a>
+                <a class="navigation-link" href="cart.html">Корзина</a>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@
           </div>
 
           <li class="slide">
-            <img src="img/slider-1.png" alt="Жалящий квадрокоптер" width="526" height="334">
+            <img src="/91145-device-32\img\img-slider\slider-1.png" alt="Жалящий квадрокоптер" width="560" height="560">
             <div class="slide-content">
               <b class="tagline">Порхает как бабочка,
                 <br>жалит как пчела!</b>
@@ -114,7 +114,7 @@
   
           <ul class="slider-slides">
             <li class="slide slide-active">
-              <img src="img/slider-3.png" alt="Самая длинная палка для селфи" width="384" height="486">
+              <img src="/91145-device-32\img\img-slider\slider-2.png" alt="Самая длинная палка для селфи" width="560" height="560">
               <div class="slide-content">
                 <b class="tagline">Делай селфи,
                   <br>как Бен Стиллер!</b>
@@ -136,7 +136,7 @@
               </div>
             </li>
             <li class="slide">
-              <img src="img/slider-2.png" alt="Мотивирующий фитнес-браслет" width="345" height="485">
+              <img src="/91145-device-32\img\img-slider\slider-3.png" alt="Мотивирующий фитнес-браслет" width="560" height="560">
               <div class="slide-content">
                 <b class="tagline">Худеем
                   <br>правильно!</b>
@@ -188,7 +188,7 @@
       </section>
   
       <section class="services">
-        <div class="container">
+        <div class="container-services">
   
           <h2 class="visually-hidden">Услуги</h2>
   
@@ -214,17 +214,17 @@
 
             <ul class="services-list">
               <li class="services-item service-delivery services-item-active">
-                <h3 id="delivery">Доставка</h3>
+                <h2 id="delivery">Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
                   поднимая его на ваш этаж.</p>
               </li>
               <li class="services-item service-guarantee">
-                <h3 id="guarantee">Гарантия</h3>
+                <h2 id="guarantee">Гарантия</h2>
                 <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар,
                   не дом, конечно же.</p>
               </li>
               <li class="services-item service-credit">
-                <h3 id="credit">Кредит</h3>
+                <h2 id="credit">Кредит</h2>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                   Выгодные для нашего банка, разумеется.</p>
               </li>
@@ -259,7 +259,7 @@
     <li>СДИК</li>
     <li>ТоксБерри</li>
   </ul>
-  <a class="about-contact-button" href="#">Подробнее о нас</a>
+  <a class="button" href="#">Подробнее о нас</a>
 
     </div>
  
@@ -277,12 +277,12 @@
      <p> Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-     <h3 class="about-contact-title">Время работы</h3>
+     <h3 class="contact-title">Время работы</h3>
      <ul class="contacts-work">
       <li class="contacts-work-item">пн—пт: с 10:00 до 22:00</li>
       <li class="contacts-work-item">сб—вс: с 10:00 до 19:00</li>
     </ul>
-    <a class="about-contact-button" href="#">Напишите нам</a>
+    <a class="button" href="#">Напишите нам</a>
 
 </div>
 
@@ -294,10 +294,13 @@
   <p class="mail-description"></p>Еженедельный дайджест с обзорами новинок,
 длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
-<p class="appointment-form-mail">
+ 
+<form class="subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
    
-  <input type="text" id="appointment-phone" name="appointment-phone" placeholder="Ваш e-mail">
-</p>
+  <input class="subscribe-field" id="subscribe-request" type="subscribe" name="subscribe" placeholder="Ваш e-mail">
+  <button class="subscribe-button" type="submit">Подписаться</button>
+</form>
+
 <p class="mail-price">Это бесплатно </p>
 
 </section>
@@ -323,7 +326,7 @@
         <a class="footer-link" href="#">Контакты</a> 
       </li>
     </ul>
-    <p class="footer-phone">Тел.: <a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+    <p class="footer-phone">Тел.:  <a href="tel:+78128121212">+7 (812) 812-12-12</a> </p>
    
   </section>  
   
@@ -332,22 +335,22 @@
      
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="button-social" href="#">
           <span class="visually-hidden">Фейсбук</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="button-social" href="#">
           <span class="visually-hidden">Инстаграм</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a class="button-social" href="#">
           <span class="visually-hidden">Твиттер</span>
         </a>
       </li>
     </ul>
-    <p class="htmlacademy-logo"> <a href="https://htmlacademy.ru/"><img src="#" alt="Логотип HTML Academy"></a></p>
+    <p class="htmlacademy-logo"> <a href="https://htmlacademy.ru/"><img src="/91145-device-32\img\htmlacademy.png" alt="Логотип HTML Academy"></a></p>
   </section>
 
 
