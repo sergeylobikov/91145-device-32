@@ -190,6 +190,36 @@ h3 {
   }
 
 
+  .popular-vr a {
+  background-image:url(img\vr.png);
+   
+  }
+
+  .popular-mono a {
+    background-image:url(img\monopod.png);
+     
+    }
+
+
+  .popular-camera a {
+    background-image:url(img\camera.png);
+     
+    }
+
+  .popular-fitness a {
+    background-image:url(img\fitnes.png);
+     
+    }
+  
+  .popular-smart a {
+    background-image:url(img\clock.png);
+     
+    }
+
+  .popular-copter a {
+    background-image:url(img\copter.png);
+     
+    }
 
 /* Доставка */
 
@@ -304,6 +334,12 @@ text-decoration: none;
 
 }
 
+
+.footer-logo {
+
+  color: #FFFFFF; 
+
+}
 
 .button-social {
   color: #FFFFFF; 
