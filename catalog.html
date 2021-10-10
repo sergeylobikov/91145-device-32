@@ -77,7 +77,10 @@
 
 
    <!-- Основное содержимое страницы -->
-   <main class="main-inner">
+   <main class="main-container main-inner">
+
+     
+
     <header class="inner-header">
       <h1 class="inner-header-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
@@ -96,19 +99,28 @@
 
     <!-- Фильтры -->
     <section class="catalog-products">
+
+ 
+
+
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-    </section>
-
-    <div class="name-catalog-filter">  
-
-    <p class="name-filter">Фильтр:</p>
-
-  </div>
+     
+      
+     
 
      <!-- Кнопка для отправки данных на сервер -->
 
+   
+
      <div class="sorting-container">
 
+         <div class="name-catalog-filter">  
+
+        <p class="name-filter">Фильтр:</p>
+    
+         </div>
+         
+         <div class="form-catalog-filter">   
 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
            
@@ -211,8 +223,14 @@
 
         <button class="button" type="submit">Показать</button>
       </form>
-     </div>
+         </div>
+  
+        </div>
+<!-- Правый блок -->
 
+
+    <div class="catalog-right-column"> 
+    
      <div class="name-sorting"> 
       <p class="name-catalog-sorting">Cортировка:</p>
 
@@ -233,7 +251,11 @@
         <span class="visually-hidden">По убыванию</span>
       </a>
     </div>
+   
+   
       <!-- Карточки товаров -->
+
+      <div class="catalog-product-column">   
       <ul class="product-list">
         <li class="product-card">
         <a class="product-card-link" href="#">
@@ -307,14 +329,31 @@
         </li>
       </ul>
 </div>
+</div>
+    </div>
+ 
+
+
+</section>
 </main>
  
 
 <!-- Подвал сайта -->
 <footer class="page-footer">
-  <section class="footer-contacts">
-    <h2 class="visually-hidden">Контакты</h2>
+  
+  <div class="footer-block"></div> 
+  
+  <section class="footer-container">
+    
+    
+
     <a class="logo footer-logo">DEVICE</a> 
+
+      
+<div class="footer-contacts">
+
+    <h2 class="visually-hidden">Контакты</h2>
+     
       <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
     
     <ul class="footer-list">
@@ -330,32 +369,38 @@
     </ul>
     <p class="footer-phone">Тел.:  <a href="tel:+78128121212">+7 (812) 812-12-12</a> </p>
    
-  </section>  
+</div>  
   
-  
-  <section class="footer-social">
+<div class="footer-social-block">
+  <div class="footer-social">
      
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="button-social" href="#">
-          <span class="visually-hidden">Фейсбук</span>
+          <img src="img\social\facebook.svg" alt="Фейсбук" width="40" height="40"></a>  
         </a>
       </li>
       <li class="footer-social-item">
         <a class="button-social" href="#">
-          <span class="visually-hidden">Инстаграм</span>
+          <img src="img\social\instagram.svg" alt="Инстаграм" width="40" height="40"></a>   
         </a>
       </li>
       <li class="footer-social-item">
         <a class="button-social" href="#">
-          <span class="visually-hidden">Твиттер</span>
+          <img src="img\social\twitter.svg" alt="Твиттер" width="40" height="40"></a>  
         </a>
       </li>
     </ul>
-    <p class="htmlacademy-logo"> <a href="https://htmlacademy.ru/"><img src="\img\htmlacademy.png" alt="Логотип HTML Academy"></a></p>
+    
+  </div> 
+  <a class="academy" href="https://htmlacademy.ru/"> <img src="\img\htmlacademy.png" alt="Логотип HTML Academy"></a>
+  </div> 
+  
+    
+
   </section>
 
-
+</div> 
 
 </footer>
   </body>

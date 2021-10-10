@@ -11,11 +11,12 @@
 
 
     <header class="main-header">
-      <div class="container">
+       
         <nav class="main-nav">
 
  <!-- Поиск --> 
           <a class="logo header-logo">DEVICE</a>
+         
           <div class="header-middle">
             <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="search-request">Поиск по сайту</label>
@@ -72,17 +73,19 @@
           </div>
   
         </nav>
-      </div>
+      
     </header>
   
-    <main class="main-content">
+    <main class="main-container main-content">
+
+      <div class="page-container"> 
 
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
 
   <!--Слайдер--> 
 
       <section class="slider">
-        <div class="container">
+        <div class="container-slider">
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="slider-controls">
             <button class="slider-control slider-control-active" type="button">Слайд №1</button>
@@ -92,7 +95,7 @@
 
 
           <ul class="slider-slides">
-          <li class="slide-active">
+          <li class="slide slide-active">
             <img src="\img\img-slider\slider-1.png" alt="Жалящий квадрокоптер" width="560" height="560">
             <div class="slide-content">
               <b class="tagline">Порхает как бабочка,
@@ -161,7 +164,7 @@
       </section>
   
       <section class="popular-categories">
-        <div class="container">
+        <div class="container-categories">
   
           <h2 class="visually-hidden">Популярные категории</h2>
   
@@ -241,14 +244,18 @@
 
 
 <!-- Доставка -->
-<section class="about-company"> 
+<section class="delivery-company"> 
 
 <div class="delivery">
 <p class="delivery-title">Доставим редкий товар под заказ</p>
 </div>
 
-
+</section>
 <!-- О компании -->
+
+<section class="about-company"> 
+
+  
 
     <div class="about">
   <h2 class="about-contact-title">О нас</h2>
@@ -266,7 +273,7 @@
 
     </div>
  
-
+  
 
 <!-- Контакты -->
 
@@ -293,10 +300,14 @@
 
 <!-- Рассылка -->
 <section class="mail"> 
+  <div class="mail-container"> 
+    <div class="mail-container-description"> 
   <h2 class="mail-title">Подпишитесь на рассылку</h2>
   <p class="mail-description">Еженедельный дайджест с обзорами новинок,
     длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>  
+</div> 
 
+<div class="subscribe-form-container"> 
  
 <form class="subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
    
@@ -306,16 +317,30 @@
 
 <p class="mail-price">Это бесплатно </p>
 
+</div>
+
+</div>
 </section>
-       
+      </div>    
 </main>
 
 
 <!-- Подвал сайта -->
 <footer class="page-footer">
-  <section class="footer-contacts">
-    <h2 class="visually-hidden">Контакты</h2>
+  
+  <div class="footer-block"></div> 
+  
+  <section class="footer-container">
+    
+    
+
     <a class="logo footer-logo">DEVICE</a> 
+
+      
+<div class="footer-contacts">
+
+    <h2 class="visually-hidden">Контакты</h2>
+     
       <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
     
     <ul class="footer-list">
@@ -331,32 +356,38 @@
     </ul>
     <p class="footer-phone">Тел.:  <a href="tel:+78128121212">+7 (812) 812-12-12</a> </p>
    
-  </section>  
+</div>  
   
-  
-  <section class="footer-social">
+<div class="footer-social-block">
+  <div class="footer-social">
      
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="button-social" href="#">
-          <span class="visually-hidden">Фейсбук</span>
+          <img src="img\social\facebook.svg" alt="Фейсбук" width="40" height="40"></a>  
         </a>
       </li>
       <li class="footer-social-item">
         <a class="button-social" href="#">
-          <span class="visually-hidden">Инстаграм</span>
+          <img src="img\social\instagram.svg" alt="Инстаграм" width="40" height="40"></a>   
         </a>
       </li>
       <li class="footer-social-item">
         <a class="button-social" href="#">
-          <span class="visually-hidden">Твиттер</span>
+          <img src="img\social\twitter.svg" alt="Твиттер" width="40" height="40"></a>  
         </a>
       </li>
     </ul>
-    <p class="htmlacademy-logo"> <a href="https://htmlacademy.ru/"><img src="\img\htmlacademy.png" alt="Логотип HTML Academy"></a></p>
+    
+  </div> 
+  <a class="academy" href="https://htmlacademy.ru/"> <img src="\img\htmlacademy.png" alt="Логотип HTML Academy"></a>
+  </div> 
+  
+    
+
   </section>
 
-
+</div> 
 
 </footer>
   </body>
