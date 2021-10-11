@@ -75,6 +75,13 @@ h3 {
 
 }
 
+
+a {
+text-decoration: none;
+}
+ 
+
+
 .visually-hidden  {
 display: none;
 
@@ -172,23 +179,40 @@ display: flex;
  
  
 
- 
+.button {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;  
+  width: 160px;
+  padding: 8px 20px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000;
+   
+}
   
 
 
 
 
-.button {
+.button-form {
   font-family: "Raleway", sans-serif;
   font-style: normal;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 160px;
+  padding: 8px 20px;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  vertical-align: middle;
   text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase; 
-  text-decoration: none; 
-  color: #000000;
+ text-transform: uppercase;
+  letter-spacing: 3.6px;
+  background: none;
+  border: none;
 
 }
 
@@ -208,7 +232,7 @@ display: flex;
   font-size: 16px;
   line-height: 19px;  
   color: #000000;
-  text-decoration: none;
+   
   letter-spacing: normal;
   text-transform: none;
 }
@@ -226,7 +250,7 @@ display: flex;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
+   
   color: #000000;
 
 }
@@ -238,7 +262,7 @@ display: flex;
   color: #000000;
   letter-spacing: normal;
   text-transform: none;
-  text-decoration: none;
+   
   
 }
 
@@ -396,7 +420,7 @@ display: flex;
   color: #000000;
   letter-spacing: normal;
   text-transform: none;
-  text-decoration: none;
+   
   background: #FFFFFF;
   }
 
@@ -554,7 +578,7 @@ width: 560px;
 font-size: 18px;
 line-height: 30px;
 text-decoration-line: underline;
-text-decoration: none;
+text-decoration: none; 
 letter-spacing: normal;
 color: #444444;
 }
@@ -688,7 +712,7 @@ line-height: 30px;
 text-align: right;
 color: #FFFFFF;
 letter-spacing: normal;
-text-decoration: none;
+ 
  }
 
 
@@ -701,7 +725,7 @@ text-decoration: none;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase; 
-  text-decoration: none; 
+   
   color: #FFFFFF; 
 
 }
@@ -750,7 +774,7 @@ text-decoration: none;
 
 .button-social {
   color: #FFFFFF; 
-  text-decoration: none;
+  
 }
  /* каталог */
 
@@ -779,11 +803,25 @@ text-decoration: none;
   color: inherit;
 }
 
+
+.breadcrumbs li:not(:last-child)  {
+margin-right: 32px;
+
+
+}
+
+
+
+
+
+
  /* Фильтр */
 
 
  .catalog-products {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
  .container-filter {
@@ -793,52 +831,82 @@ text-decoration: none;
 }
 
 .name-catalog-filter {
-  background: #DCDCDC;  
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  min-height: 70px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: #dbdbdb;
 }
 
 .sorting-container {
-  background: #EBEBEB; 
+  flex-grow: 1;
+}
+
+.form-catalog-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+  padding-top: 69px;
+  padding-right: 70px;
+  background-color: #efefef;
+}
+
+.catalog-filter {
   display: flex;
   flex-direction: column;
-  width: 468px;
+  width: 200px;
 }
 
 
+.catalog-filter-group {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-top: 2px solid #000;
+
+
+
+}
+
 .catalog-right-column {
-  width: 972px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .catalog-product-column {
-  margin-right: 72px;
-width: 972px; 
-display: flex;
-flex-direction: column;
+  box-sizing: border-box;
+  width: 830px;
+  padding: 70px 0 77px 70px;
 }
 
 .pagination-block {
-  background: #EBEBEB;
-  width: 760px; 
+  width: 760px;
   display: flex;
-  justify-content: center
+  justify-content: space-between;
+  background-color: #ebebeb;
   }
   
 
  
 
 .name-filter {
-font-family: "Raleway", sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 330px;
+  padding-left: 60px;
 }
 
  
@@ -859,11 +927,27 @@ color: #000000;
 }
 
 .name-sorting {
-  background: #EBEBEB;
   display: flex;
-  align-items: center;
+  
+  flex-direction: row;
+   
+  box-sizing: border-box;
+  min-height: 70px;
+ 
+  background-color: #ebebeb;
 }
 
+
+.name-sorting-line {
+  display: flex;  
+  flex-direction: row;  
+  flex-wrap: wrap;  
+  align-items: center;   
+  box-sizing: border-box;
+  width: 830px;
+  padding-left: 72px;
+
+}
 
 .name-catalog-sorting {
 font-family: "Raleway", sans-serif;
@@ -883,6 +967,16 @@ color: #000000;
 
  /* Карточки товаров */
 
+ .product-card {
+  
+  display: flex; 
+  flex-direction: column;
+  width: 360px;
+  margin-bottom: 46px;
+
+}
+
+
  .product-card-title {
   font-weight: bold;
   font-size: 18px;
@@ -896,15 +990,20 @@ color: #000000;
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; 
+  flex-direction: row;  
+  flex-wrap: wrap; 
+  width: 100%;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
   }
 
 
 
-.product-card-link {
-text-decoration: none;
-}
+ 
 
 
 .product-card-price {
@@ -918,16 +1017,20 @@ text-decoration: none;
   .pagination  {
     display: flex;
     align-items: center;
-
+    background-color: #ebebeb;
 
   }
 
-.pagination-link {
+.pagination-link, .pagination-ellipsis {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-decoration: none;
-  color: #444444;
+  line-height: 19px;  
+  text-align: center;  
+  color: #444444;  
+  opacity: 0.3;
+  
 }
 
 .pagination-step {
@@ -940,10 +1043,38 @@ text-decoration: none;
   align-items: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
+  
     color: #000000;
 }
 
 .pagination-show-more {
   background: #FFFFFF;
+width: 760px;
+text-align: center;
+
+}
+
+
+.pagination-button {
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;   
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;  
+  color: #000000;
+  padding: 23px 30px;  
+  background-color: #ebebeb;
+   
+
+}
+
+
+ 
+
+.pagination-item:not(:last-child) {
+  margin-right: 28px;
 }
